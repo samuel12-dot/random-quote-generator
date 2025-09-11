@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/051eb91e61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="button-container">
+                <button id="favorite" type="button">
+                    <span>Like</span>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <button id="show-list" type="button">
+                    <span>Menu</span>
+                    <i class="fa-regular fa-bars"></i>
+                </button>
+                <button id="copy" type="button">
+                    <span>Copy</span>
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+            <p id="quote"></p>
+            <h3 id="author">John Doe</h3>
+            <button id="button" type="button">Generate</button>
+        </div>
+    </div>
+
+    <div class="favorite-container">
+        <h3>Favorite Quote</h3>
+        <ul id="list-of-favorite-quotes"></ul>
+        <button id="clear-button" type="button">Clear</button>
+        <button id="close-button" type="button">Close</button>
+    </div>
+ 
+    <script src="./script.js"></script>
+</body>
+
+</html>
