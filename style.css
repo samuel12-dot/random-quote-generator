@@ -22,6 +22,10 @@ body {
     background-color: blue;
 }
 
+#quote {
+    color: white;
+}
+
 .wrapper {
     width: min(500px, 90%);
     position: absolute;
