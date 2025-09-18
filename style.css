@@ -10,7 +10,6 @@ body {
     background-color: #f7f7f7;
 }
 
-.wrapper,
 .favorite-container {
     width: min(500px, 90%);
     position: absolute;
@@ -20,7 +19,20 @@ body {
     padding: 5em 3em;
     box-shadow: 0 5px 40px 0 rgba(88, 83, 153, 0.15);
     border-radius: 1em;
-    background-color: rgb(69, 121, 225);
+    background-color: blue;
+}
+
+.wrapper {
+    width: min(500px, 90%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5em 3em;
+    box-shadow: 0 5px 40px 0 rgba(88, 83, 153, 0.15);
+    border-radius: 1em;
+    background-color: transparent;
+    transition: background-color .1s ease-in;
 }
 
 .container {

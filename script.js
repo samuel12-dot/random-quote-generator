@@ -1,4 +1,7 @@
 // ===================== QUOTES ARRAY =====================
+
+const wrapper = document.querySelector('.wrapper')
+
 const quotes = [
   { content: "The best way to get started is to quit talking and begin doing.", author: "Walt Disney" },
   { content: "Don’t let yesterday take up too much of today.", author: "Will Rogers" },
@@ -42,11 +45,26 @@ const updateQuote = (content, authorName) => {
   }
 };
 
+//Get Random background color
+function getRandomColor() {
+  const colors = ["#E7C285", "#F28B82", "#FDD663", "#81C995", "#76D7EA", "#A7A5FF", "#FFB7C5"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+// Change background color
+function changeBackgroundColor() {
+  wrapper.style.backgroundColor = getRandomColor();
+}
+
 // ===================== RANDOM QUOTE =====================
 function getQuote() {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   updateQuote(random.content, random.author || "Unknown");
+
+  changeBackgroundColor()
 }
+
+
 
 // ===================== FAVORITES HANDLING =====================
 const displayFavorites = () => {
