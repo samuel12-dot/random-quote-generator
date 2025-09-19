@@ -1,5 +1,7 @@
 # Random Quote Generator
 
+![Random Quote Generator Example](./quote.png)
+
 **Year:** 2025  
 **Category:** JavaScript  
 **Type:** DOM & Logic  
